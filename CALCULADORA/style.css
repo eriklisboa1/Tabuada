@@ -1,0 +1,10 @@
+body{
+  background-image: linear-gradient(#BDE038,#506266);
+  background-attachment: fixed;
+}
+script{
+    text-align: center;
+}
+img{
+    position: center;
+}

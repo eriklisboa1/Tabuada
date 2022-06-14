@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pag01</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <h1>CALCULADORA</h1> 
+        <p>Digite 1 Numero Para puxar sua tabuada</p> <br> 
+        <input type="number" name="txtn1" id="txtn1"> 
+        <input type="button" value= "puxar" onclick="puxar()"> <br> <br>
+        <div id="res">RESULTADOS</div>
+        
+    <script>
+        function puxar(){
+            var tn1 = window.document.getElementById('txtn1')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var s = n1 + 1
+            var s1 = n1 + 2
+            var s2 = n1 + 3
+            var s3 = n1 + 4
+            var s4 = n1 + 5
+            var s5 = n1 + 6
+            var s6 = n1 + 7
+            var s7 = n1 + 8
+            var s8 = n1 + 9
+            var s9 = n1 + 10
+            //subtituição
+            var su = n1 - 1
+            var su1 = n1 -2 
+            var su2 = n1 - 3 
+            var su3 = n1- 4 
+            var su4 = n1 - 5
+            var su5 = n1 - 6
+            var su6 = n1 - 7 
+            var su7 = n1 - 8
+            var su8 = n1 - 9
+            var su9 = n1 - 10
+            //multplicação
+            var m = n1 * 1
+            var m1 = n1 * 2
+            var m2 = n1 * 3 
+            var m3 = n1 * 4
+            var m4 = n1 * 5 
+            var m5 = n1 * 6
+            var m6 = n1 * 7 
+            var m7 = n1 * 8 
+            var m8 = n1 * 9
+            var m9 = n1 * 10
+
+            res.innerHTML=`              ${n1} + 1 =${s} <br> ${n1} + 2=${s1} <br> ${n1} + 3 =${s2} <br> ${n1} + 4= ${s3} <br> ${n1} + 5=${s4} <br> ${n1} + 6=${s5} <br> ${n1} + 7=${s6} <br> ${n1} + 8=${s7} <br> ${n1} + 9=${s8} <br> ${n1} + 10=${s9}
+            <br> <br>
+            
+            ${n1} - 1=${su} <br>
+            ${n1} - 2=${su1} <br>
+            ${n1} - 3=${su2} <br>
+            ${n1} - 4=${su3} <br>
+            ${n1} - 5=${su4} <br>
+            ${n1} - 6=${su5} <br>
+            ${n1} - 7=${su6} <br>
+            ${n1} - 8=${su7} <br>
+            ${n1} - 9=${su8} <br>
+            ${n1} - 10=${su9} <br>
+            <br> <br>
+
+            ${n1} x 1=${m}<br>
+            ${n1} x 2=${m1}<br>
+            ${n1} x 3=${m2}<br>
+            ${n1} x 4=${m3}<br>
+            ${n1} x 5=${m4}<br>
+            ${n1} x 6=${m5}<br>
+            ${n1} x 7=${m6}<br>
+            ${n1} x 8=${m7}<br>
+            ${n1} x 9=${m8}<br>
+            ${n1} x 10=${m9}<br>`
+        }
+    </script>
+    
+    
+</body>
+</html>
